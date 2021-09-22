@@ -10,13 +10,13 @@ set(CMAKE_AUTORCC ON)
 
 set(RCC_FILE ${PROJECT_SOURCE_DIR}/src/resources/all.qrc)
 
-# 添加源文件
+# 收集指定目录中所有源文件的名称，并将列表存储在提供的变量中。
 aux_source_directory(${PROJECT_SOURCE_DIR} SRC_FILES)
 aux_source_directory(${PROJECT_SOURCE_DIR}/src SRC_FILES)
 aux_source_directory(${PROJECT_SOURCE_DIR}/src/core SRC_FILES)
 aux_source_directory(${PROJECT_SOURCE_DIR}/src/common SRC_FILES)
 
-# 添加头文件搜索目录
+# 添加头文件搜索目录，方便编写代码时头文件查找。
 include_directories(${PROJECT_SOURCE_DIR}/src)
 
 # 添加编译选项

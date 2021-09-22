@@ -19,7 +19,7 @@ TARGET_NAME=cmake_base_qt
 ARCHITECTURE=amd64
 VERSION=1.0.0
 
-cp ./code/build/${TARGET_NAME} ./package/etc
+cp ./code/build/${TARGET_NAME} ./package/etc/cmake_base_qt
 sudo dpkg-deb -b ./package ./${TARGET_NAME}-${ARCHITECTURE}-${VERSION}.deb
 
 echo end

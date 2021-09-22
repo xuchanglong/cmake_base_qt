@@ -19,10 +19,13 @@ CMake_Base_Qt
 ****
 ### 二、使用方法
 #### 1、生成测试程序
-   * cd code
-   * mkdir build && cd buid
-   * cmake .. && make
-   * ./cmake_base_qt
-
+```
+cd code
+mkdir build && cd buid
+cmake .. && make
+./cmake_base_qt
+```
 #### 2、生成 deb
-   * sh build.sh
+```
+sh build.sh
+```
